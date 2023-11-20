@@ -10,8 +10,9 @@ async function main() {
     console.table(allEpisodes);
 
     // Filtrar episodios por nombre y estado
-   // const filteredEpisodes = await filterEpisodes('rick', 'alive');
-   // console.log('Episodios filtrados:', filteredEpisodes);
+   const filteredEpisodes = await filterEpisodes('Morty','dead');
+    //console.log('Episodios filtrados:', filteredEpisodes);
+    console.table(filteredEpisodes);
   } catch (error) {
     console.error('Error:', error.message);
   }
